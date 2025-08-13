@@ -40,6 +40,7 @@
   heading: black,
 )}
 
+#set page(width: 17in, height: 22in, margin: 4in, fill: palette.bg)
 #set page(width: 8.5in, height: 11in, margin: 1in, fill: palette.bg)
 
 // Shorthand for highlight groups
@@ -57,7 +58,6 @@
   size: 9pt,
   fill: palette.fg,
   font: if pixel_font { "CozetteVector" } else if code_styling { "MesloLGS Nerd Font" } else { "RobotoMono Nerd Font"},
-// weight: "bold"
 )
 
 #show heading.where(level: 1): set text(fill: if code_styling { palette.link } else { palette.heading })
@@ -77,7 +77,7 @@
   // #rule()
   
   #text(fill: if code_styling {palette.comment} else {palette.fg} )[
-  anthony.j.green\@outlook.com • (253) 495-2988 •
+  #if not professional {"//"} anthony.j.green\@outlook.com • (253) 495-2988 •
 ]
   #link("https://www.linkedin.com/in/anthonygreen03/", "linkedin.com/in/anthonygreen03/")
 ]
@@ -97,8 +97,8 @@
 - Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
 
 === Undergraduate Researcher #cmt("-") #fn("University of Washington") #punct("(")#num("09/2023") #cmt("-") #num("12/2024")#punct(")")
-- Sole developer of a GPU compute physics simulator using the Discrete Element Method (DEM) for targeted earthquake scenarios.
-- Implemented end-to-end in Rust with WebGPU; simulation and rendering authored in WGSL shaders.
+- Lead developer of a physics simulator for earthquake simulation.
+- Built from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
 - Built tooling for experiment setup, runtime control, measurement, and automated analysis.
 - Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
 - Collaborated with faculty to align technical design with research objectives and validation needs.
