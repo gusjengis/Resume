@@ -1,8 +1,16 @@
 // VARIABLES
 
-#let dark = false
+#let professional = false
+
+#let dark = true
 #let code_styling = true
 #let pixel_font = false
+
+#if professional {
+  dark = false
+  code_styling = false
+  pixel_font = false
+}
 
 // STYLING
 
@@ -52,9 +60,9 @@
 // weight: "bold"
 )
 
-#show heading.where(level: 1): set text(fill: if code_styling { palette.keyword } else { palette.heading })
+#show heading.where(level: 1): set text(fill: if code_styling { palette.link } else { palette.heading })
 #show heading.where(level: 2): set text(fill: if code_styling { palette.func } else { palette.heading })
-#show heading.where(level: 3): set text(fill: if code_styling { palette.type } else { palette.heading })
+#show heading.where(level: 3): set text(fill: if code_styling { palette.keyword } else { palette.heading })
 
 #show link: set text(fill: if code_styling {palette.link} else {palette.fg})
 #show link: underline
@@ -65,6 +73,9 @@
 #align(center)[
   #text(18pt, weight: "bold", fill: if code_styling {palette.punct} else {palette.fg} )[Anthony Green]\
 
+  #text(12pt, weight: "bold", fill: if code_styling {palette.type} else {palette.fg} )[Software Engineer]\
+  // #rule()
+  
   #text(fill: if code_styling {palette.comment} else {palette.fg} )[
   anthony.j.green\@outlook.com • (253) 495-2988 •
 ]
@@ -73,22 +84,29 @@
 
 = Experience
 #rule()
-=== Backend Engineer — Rainspire Studios (05/2025 – Present)
-- Designed and implemented ...
-- Improved X by Y%
+=== Backend Engineer — Rainspire Studios (#num("05/2025") #punct("-") #str("Present"))
+- Integrated mobile titles with cloud services, owning client↔backend data flows and deployment pipelines.
+- Built gameplay features and tooling in Unity (C\#) with supporting scripts in Python and JavaScript.
+- Managed iOS builds in Xcode and handled Apple Developer account configuration/provisioning.
+- Prototyped adaptive bots using Unity ML-Agents to automate balance testing as mechanics evolved.
+- Implemented in-engine data visualization to accelerate debugging and performance analysis.
+- Led the integration approach for cloud services, improving maintainability and reducing backend-related bug reports by an estimated 30%.
 
-=== Pharmacy Technician — Walgreens (08/2024 – 04/2025)
-- Designed and implemented ...
-- Improved X by Y%
+=== Pharmacy Technician — Walgreens (#num("08/2024") #punct("-") #num("04/2025"))
+- Operated pharmacy management systems to process prescriptions and insurance claims accurately in a high-volume setting.
+- Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
 
-=== Undergraduate Researcher - University of Washington (09/2023 - 12/2024)
-- Assisted with ...
-- Developed ...
+=== Undergraduate Researcher — University of Washington (#num("09/2023") #punct("-") #num("12/2024"))
+- Sole developer of a GPU compute physics simulator using the Discrete Element Method (DEM) for targeted earthquake scenarios.
+- Implemented end-to-end in Rust with WebGPU; simulation and rendering authored in WGSL shaders.
+- Built tooling for experiment setup, runtime control, measurement, and automated analysis.
+- Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
+- Collaborated with faculty to align technical design with research objectives and validation needs.
 
 = Technical Skills
 #rule()
-#let languages = ("Rust", "Python", "JavaScript", "C64 Basic", "C (K&R & ANSI)", "C++", "Arduino", "HTML", "CSS", "WASM", "WGSL/WebGPU", "GLSL/WebGL", "C\#", "HLSL", "Nix", "Markdown", "Typst")
-#num("Languages")#punct(":") 
+#let languages = ("Rust", "Python", "JavaScript", "C64 Basic", "C (K&R & ANSI)", "C++", "Arduino", "HTML", "CSS", "WASM", "WGSL", "GLSL", "C#", "HLSL", "Nix", "Markdown", "Typst")
+#typ("Languages")#punct(":") 
 #let i = 0
 #for language in languages {
   str(language)
@@ -99,8 +117,8 @@
   i+=1
 } 
 
-#let tools = ("Arduino", "WASM", "WebGPU", "WebGL", "Unity", "Git", "Docker", "AWS", "Neovim", "Linux", "Windows", "MacOS")
-#num("Tools")#punct(":") 
+#let tools = ("Arduino", "WASM", "WebGPU", "WebGL", "Unity", "Git", "Docker", "AWS", if professional {"Neovim"} else { "Neovim(btw)"}, "Linux", "Windows", "MacOS")
+#typ("Tools")#punct(":") 
 #let i = 0
 #for tool in tools {
   str(tool)
@@ -115,4 +133,3 @@
 #rule()
 B#punct(".")S#punct(".") in Computer Science #punct("—") #fn("University of Washington") (2021–2023)\
 Associates of Science #punct("—") Pierce College (#typ("Running Start")) (2019–2021)
-
