@@ -49,7 +49,7 @@
 #let str(body) = text(fill: if code_styling { palette.string } else { palette.fg })[#body]
 #let num(body) = text(fill: if code_styling { palette.number } else { palette.fg })[#body]
 #let typ(body) = text(fill: if code_styling { palette.type } else { palette.fg })[#body]
-#let punct(body) = text(fill: if code_styling { palette.comment } else { palette.fg })[#body]
+#let punct(body) = text(fill: if code_styling { palette.punct } else { palette.fg })[#body]
 #let lnk(body) = text(fill: if code_styling { palette.link } else { palette.fg })[#body]
 #let hding(body) = text(fill: if code_styling { palette.heading } else { palette.fg })[#body]
 
@@ -84,7 +84,7 @@
 
 = Experience
 #rule()
-=== Backend Engineer #punct("-") #fn("Rainspire Studios") (#num("05/2025") #punct("-") #str("Present"))
+=== Backend Engineer #cmt("-") #fn("Rainspire Studios") #punct("(")#num("05/2025") #cmt("-") #str("Present")#punct(")")
 - Integrated mobile titles with cloud services, owning client↔backend data flows and deployment pipelines.
 - Built gameplay features and tooling in Unity (C\#) with supporting scripts in Python and JavaScript.
 - Managed iOS builds in Xcode and handled Apple Developer account configuration/provisioning.
@@ -92,11 +92,11 @@
 - Implemented in-engine data visualization to accelerate debugging and performance analysis.
 - Led the integration approach for cloud services, improving maintainability and reducing backend-related bug reports by an estimated 30%.
 
-=== Pharmacy Technician #punct("-") #fn("Walgreens") (#num("08/2024") #punct("-") #num("04/2025"))
+=== Pharmacy Technician #cmt("-") #fn("Walgreens") #punct("(")#num("08/2024") #cmt("-") #num("04/2025")#punct(")")
 - Operated pharmacy management systems to process prescriptions and insurance claims accurately in a high-volume setting.
 - Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
 
-=== Undergraduate Researcher #punct("-") #fn("University of Washington") (#num("09/2023") #punct("-") #num("12/2024"))
+=== Undergraduate Researcher #cmt("-") #fn("University of Washington") #punct("(")#num("09/2023") #cmt("-") #num("12/2024")#punct(")")
 - Sole developer of a GPU compute physics simulator using the Discrete Element Method (DEM) for targeted earthquake scenarios.
 - Implemented end-to-end in Rust with WebGPU; simulation and rendering authored in WGSL shaders.
 - Built tooling for experiment setup, runtime control, measurement, and automated analysis.
@@ -131,5 +131,5 @@
 
 = Education
 #rule()
-#typ("B.S. in Computer Science") #punct("—") #fn("University of Washington") (#num("2021") #punct("-") #num("2023"))\
-#typ("Associates of Science") #punct("—") Pierce College (#kw("Running Start")) (#num("2019") #punct("-") #num("2021"))
+#typ("B.S. in Computer Science") #cmt("—") #fn("University of Washington") (#num("2021") #cmt("-") #num("2023"))\
+#typ("Associates of Science") #cmt("—") Pierce College (#kw("Running Start")) (#num("2019") #cmt("-") #num("2021"))
