@@ -1,8 +1,8 @@
 // VARIABLES
 
-#let dark = true
+#let dark = false
 #let code_styling = true
-#let pixel_font = true
+#let pixel_font = false
 
 // STYLING
 
@@ -48,7 +48,7 @@
 #set text(
   size: 9pt,
   fill: palette.fg,
-  font: if pixel_font { "CozetteVector" } else if code_styling { "MesloLGS Nerd Font" } else { ""},
+  font: if pixel_font { "CozetteVector" } else if code_styling { "MesloLGS Nerd Font" } else { "RobotoMono Nerd Font"},
 // weight: "bold"
 )
 
@@ -87,7 +87,7 @@
 
 = Technical Skills
 #rule()
-#let languages = ("Rust", "Python", "JavaScript", "C64 Basic", "C (K&R & ANSI)", "C++", "Arduino", "HTML", "CSS", "WASM", "WGSL/WebGPU", "GLSL/WebGL", "C\#", "HLSL", "Nix")
+#let languages = ("Rust", "Python", "JavaScript", "C64 Basic", "C (K&R & ANSI)", "C++", "Arduino", "HTML", "CSS", "WASM", "WGSL/WebGPU", "GLSL/WebGL", "C\#", "HLSL", "Nix", "Markdown", "Typst")
 #num("Languages")#punct(":") 
 #let i = 0
 #for language in languages {
@@ -99,7 +99,7 @@
   i+=1
 } 
 
-#let tools = ("Arduino","WASM", "WebGPU", "WebGL", "Unity", "Git", "Docker", "AWS", "Neovim", "Linux/Windows/MacOS")
+#let tools = ("Arduino", "WASM", "WebGPU", "WebGL", "Unity", "Git", "Docker", "AWS", "Neovim", "Linux", "Windows", "MacOS")
 #num("Tools")#punct(":") 
 #let i = 0
 #for tool in tools {
@@ -113,6 +113,6 @@
 
 = Education
 #rule()
-B.S. in Computer Science — #fn("University of Washington") (2021–2023)\
-Associates of Science — Pierce College (#typ("Running Start")) (2019–2021)
+B#punct(".")S#punct(".") in Computer Science #punct("—") #fn("University of Washington") (2021–2023)\
+Associates of Science #punct("—") Pierce College (#typ("Running Start")) (2019–2021)
 
