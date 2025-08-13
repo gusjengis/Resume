@@ -85,23 +85,23 @@
 = Experience
 #rule()
 === Backend Engineer #cmt("-") #fn("Rainspire Studios") #punct("(")#num("05/2025") #cmt("-") #str("Present")#punct(")")
-- Integrated mobile titles with cloud services, owning client↔backend data flows and deployment pipelines.
+- Led the integration of mobile titles with cloud services, owning client↔backend data flows and deployment pipelines.
 - Built gameplay features and tooling in Unity (C\#) with supporting scripts in Python and JavaScript.
 - Managed iOS builds in Xcode and handled Apple Developer account configuration/provisioning.
 - Prototyped adaptive bots using Unity ML-Agents to automate balance testing as mechanics evolved.
 - Implemented in-engine data visualization to accelerate debugging and performance analysis.
-- Led the integration approach for cloud services, improving maintainability and reducing backend-related bug reports by an estimated 30%.
+// - Led the integration approach for cloud services, improving maintainability and reducing backend-related bug reports by an estimated 30%.
 
-=== Pharmacy Technician #cmt("-") #fn("Walgreens") #punct("(")#num("08/2024") #cmt("-") #num("04/2025")#punct(")")
-- Operated pharmacy management systems to process prescriptions and insurance claims accurately in a high-volume setting.
-- Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
+// === Pharmacy Technician #cmt("-") #fn("Walgreens") #punct("(")#num("08/2024") #cmt("-") #num("04/2025")#punct(")")
+// - Operated pharmacy management systems to process prescriptions and insurance claims accurately in a high-volume setting.
+// - Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
 
 === Undergraduate Researcher #cmt("-") #fn("University of Washington") #punct("(")#num("09/2023") #cmt("-") #num("12/2024")#punct(")")
 - Lead developer of a physics simulator for earthquake simulation.
 - Built from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
 - Built tooling for experiment setup, runtime control, measurement, and automated analysis.
-- Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
-- Collaborated with faculty to align technical design with research objectives and validation needs.
+// - Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
+// - Collaborated with faculty to align technical design with research objectives and validation needs.
 
 = Technical Skills
 #rule()
