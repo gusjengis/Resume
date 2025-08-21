@@ -1,9 +1,10 @@
 // VARIABLES
 
 #let professional = false
+#let rules = true
 
-#let dark = true
-#let code_styling = true
+#let dark = false
+#let code_styling = false
 #let pixel_font = false
 
 #if professional {
@@ -55,20 +56,26 @@
 #let hding(body) = text(fill: if code_styling { palette.heading } else { palette.fg })[#body]
 
 #set text(
-  size: 9pt,
+  size: if pixel_font { 10.5pt} else {10pt},
   fill: palette.fg,
-  font: if pixel_font { "CozetteVector" } else if code_styling { "MesloLGS Nerd Font" } else { "RobotoMono Nerd Font"},
+  font: if pixel_font { "CozetteVector" } else { "Carlito"},
 )
 
 #show heading.where(level: 1): set text(fill: if code_styling { palette.link } else { palette.heading })
 #show heading.where(level: 2): set text(fill: if code_styling { palette.func } else { palette.heading })
 #show heading.where(level: 3): set text(fill: if code_styling { palette.keyword } else { palette.heading })
+#show heading.where(level: 1): set block(spacing: 10pt)
+// #show heading.where(level: 2): set block(spacing: 5pt)
+// #show heading.where(level: 3): set block(spacing: 10pt)
 
 #show link: set text(fill: if code_styling {palette.link} else {palette.fg})
 #show link: underline
 
-#let rule() = line(length: 100%, stroke: (paint: if code_styling {palette.punct} else {palette.fg}, thickness: 0.5pt))
+#let rule() = if rules { //line(length: 100%, stroke: (paint: if code_styling {palette.punct} else {palette.fg}, thickness: 0.5pt))}
 
+block(spacing: 5pt)[
+  #line(length: 100%, stroke: (paint: if code_styling {palette.punct} else {palette.fg}, thickness: 0.5pt))
+]}
 // CONTENT
 #align(center)[
   #text(18pt, weight: "bold", fill: if code_styling {palette.punct} else {palette.fg} )[Anthony Green]\
@@ -77,15 +84,18 @@
   // #rule()
   
   #text(fill: if code_styling {palette.comment} else {palette.fg} )[
-  #if not professional {"//"} anthony.j.green\@outlook.com • (253) 495-2988 •
+  #if not professional and code_styling {"//"} anthony.j.green\@outlook.com • (253) 495-2988 •
 ]
   #link("https://www.linkedin.com/in/anthonygreen03/", "linkedin.com/in/anthonygreen03/")
 ]
 
 = Experience
 #rule()
-=== Backend Engineer #cmt("-") #fn("Rainspire Studios") #punct("(")#num("05/2025") #cmt("-") #str("Present")#punct(")")
-- Led the integration of mobile titles with cloud services, owning client↔backend data flows and deployment pipelines.
+
+=== Backend Engineer #cmt("-") #fn("Rainspire Studios") 
+#align(right)[#punct("(")#num("05/2025") #cmt("-") #str("Present")#punct(")")]
+- Led the integration of mobile titles with cloud services. 
+- Handled user authentication, cloud storage, advertisement integration,
 - Built gameplay features and tooling in Unity (C\#) with supporting scripts in Python and JavaScript.
 - Managed iOS builds in Xcode and handled Apple Developer account configuration/provisioning.
 - Prototyped adaptive bots using Unity ML-Agents to automate balance testing as mechanics evolved.
@@ -103,6 +113,21 @@
 // - Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
 // - Collaborated with faculty to align technical design with research objectives and validation needs.
 
+
+= Projects
+#rule()
+== Particle Life
+- #lorem(10)
+- #lorem(10)
+- #lorem(10)
+== Portfolio Site
+- #lorem(10)
+- #lorem(10)
+- #lorem(10)
+== hyprfocus
+- #lorem(10)
+- #lorem(10)
+- #lorem(10)
 = Technical Skills
 #rule()
 #let languages = ("Rust", "Python", "JavaScript", "C64 Basic", "C (K&R & ANSI)", "C++", "Arduino", "HTML", "CSS", "WASM", "WGSL", "GLSL", "C#", "HLSL", "Nix", "Markdown", "Typst")
@@ -131,5 +156,5 @@
 
 = Education
 #rule()
-#typ("B.S. in Computer Science") #cmt("—") #fn("University of Washington") (#num("2021") #cmt("-") #num("2023"))\
-#typ("Associates of Science") #cmt("—") Pierce College (#kw("Running Start")) (#num("2019") #cmt("-") #num("2021"))
+B.S. in Computer Science #cmt("—") #fn("University of Washington") (#num("2021") #cmt("-") #num("2023"))\
+Associates of Science #cmt("—") Pierce College (#kw("Running Start")) (#num("2019") #cmt("-") #num("2021"))
