@@ -30,7 +30,8 @@
 #set text(
   size: 10pt,
   fill: palette.fg,
-  font: "Carlito",
+  // font: "Carlito",
+  font: "Helvetica Neue LT Std",
 )
 
 #show heading.where(level: 1): set text(fill: palette.heading)
@@ -47,23 +48,29 @@
 #let rule() = if rules { block(spacing: 7pt)[ #line(length: 100%, stroke: (paint: palette.fg, thickness: 0.5pt)) ] }
 // CONTENT
 #align(center)[
-  #text(18pt, weight: "bold", fill: palette.fg )[Anthony Green]\
+    #text(18pt, weight: "bold", fill: palette.fg )[Anthony Green]\
 
-  #text(12pt, weight: "bold", fill: palette.fg )[Software Engineer]\
-  // #rule()
+    // #text(12pt, weight: "bold", fill: palette.fg )[Software Engineer]\
+    #block(above: 7pt, below: 0pt)[#text(11pt, weight: "bold", fill: palette.fg, )[
+        Seattle, WA
+      ]\
+    ]
+    // #rule()
   
-  #text(fill: palette.fg )[
-  anthony.j.green\@outlook.com | (253) 495-2988 |
-  // anthony.j.green\@outlook.com • (253) 495-2988 •
-]
-  #link("https://www.linkedin.com/in/anthonygreen03", "linkedin.com/in/anthonygreen03") |
-  #link("https://www.github.com/gusjengis", "github.com/gusjengis")
+    #block(above: 7pt, below: 0pt)[#text(fill: palette.fg )[
+      anthony.j.green\@outlook.com | (253) 495-2988 |
+      // anthony.j.green\@outlook.com • (253) 495-2988 •
+    ]
+    #link("https://www.linkedin.com/in/anthonygreen03", "linkedin.com/in/anthonygreen03") |
+    #link("https://www.github.com/gusjengis", "github.com/gusjengis")
+  ]
 ]
 
 = Experience
 #rule()
 
-=== Backend Engineer - Rainspire Studios #h(1fr) 05/2025 - Present
+=== Backend Engineer #h(1fr) 05/2025 - Present
+_Rainspire Studios_ #h(1fr) Seattle, WA 
 - Led the integration of mobile titles with cloud services. 
 - Handled user authentication, cloud storage, advertisement integration,
 - Built gameplay features and tooling in Unity (C\#) with supporting scripts in Python and JavaScript.
@@ -71,11 +78,11 @@
 - Prototyped adaptive bots using Unity ML-Agents to automate balance testing as mechanics evolved.
 - Implemented in-engine data visualization to accelerate debugging and performance analysis.
 
-=== Pharmacy Technician - Walgreens #h(1fr) 08/2024 - 04/2025
-- Operated pharmacy management systems to process prescriptions and insurance claims accurately in a high-volume setting.
-- Maintained productivity and attention to detail; adopted advanced keyboard workflows that informed later engineering ergonomics.
+=== Pharmacy Technician #h(1fr) 08/2024 - 04/2025
+_Walgreens_ #h(1fr) Puyallup, WA 
 
-=== Undergraduate Researcher - University of Washington #h(1fr) 09/2023 - 12/2024
+=== Undergraduate Researcher #h(1fr) 09/2023 - 12/2024
+_University of Washington_ #h(1fr) Tacoma, WA 
 - Lead developer of a physics simulator for earthquake simulation.
 - Built from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
 - Built tooling for experiment setup, runtime control, measurement, and automated analysis.
