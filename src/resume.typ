@@ -1,7 +1,7 @@
 // VARIABLES
 
 #let professional = true
-#let rust = false
+#let rust_focused = if "rust" in sys.inputs { sys.inputs.rust == "true" } else { false }
 #let rules = true
 #let capital_titles = true
 #let x_inset = 2em
@@ -51,6 +51,26 @@
 #show link: underline
 
 #let rule() = if rules { block(spacing: 0pt)[ #line(length: 100%, stroke: (paint: palette.fg, thickness: 1.0pt)) ] }
+
+#let not_rust(body, above: 11pt, below: 7pt, h3_above: 0pt, h3_below: 7pt) = {
+  if not rust_focused {
+    block(above: above, below: below)[
+      // local spacing for level-3 headings inside this block only
+      #show heading.where(level: 3): set block(above: h3_above, below: h3_below)
+    #body
+    ]
+  }
+}
+
+#let rust(body, above: 11pt, below: 7pt, h3_above: 0pt, h3_below: 7pt) = {
+  if rust_focused {
+    block(above: above, below: below)[
+      // local spacing for level-3 headings inside this block only
+      #show heading.where(level: 3): set block(above: h3_above, below: h3_below)
+    #body
+    ]
+  }
+}
 // CONTENT
 #align(center)[
     #text(18pt, weight: "bold", fill: palette.fg )[Anthony Green]\
@@ -93,33 +113,30 @@
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
   === Physics Simulator #text(weight: "regular")[| Rust, WebGPU, Python] #h(1fr) #link("https://github.com/gusjengis/Particle-Physics-Sim", "github.com/gusjengis/Particle-Physics-Sim")
-  #if not rust { block(above: 0pt, below: 0pt)
-    [
-      #show heading.where(level: 3): set block(above: 0pt, below: 7pt)
+  #not_rust[
       === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
       - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
       - Achieved a 300% performance boost using spatially partitioned collision detection.
-      #show heading.where(level: 3): set block(above: 11pt, below: 7pt)
+  ]
+  #not_rust[
       === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, NodeJS, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
       - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
       - Developed a custom Node.js server and templating engine, hosted on AWS. 
       - Engineered a system maintaining window states in query strings for consistent UX. 
       - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
-    ]
-  }
-  === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
-  - Used Rust to create a Linux service for hyprland that logs the focused window at all times. 
-  - Created a CLI that uses these logs to render an activity/screen time report.
-  - Wrote complex code to render a high-res timeline in the terminal.
-  #if not rust { block()
-    [
-      #show heading.where(level: 3): set block(above: 0pt, below: 7pt)
+  ]
+  #rust[
+    === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
+    - Used Rust to create a Linux service for hyprland that logs the focused window at all times. 
+    - Created a CLI that uses these logs to render an activity/screen time report.
+    - Wrote complex code to render a high-res timeline in the terminal.
+  ]
+  #not_rust[
       === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
       - Designed and assembled a unique, Arduino-based handheld gaming console with custom 3D-printed components and off-the-shelf electronics. 
       - Programmed a simple operating system for the device, complete with user interface, settings menu, and multiple applications, including four original games. 
       - Accomplished this with extreme limitations, specifically a 16x8 RGBLED display, 16mhz processor, and 256kb RAM. 
-    ]
-  }
+  ]
 ]
 = TECHNICAL SKILLS
 #rule()
