@@ -3,7 +3,6 @@
 #let professional = true
 #let rust = false
 #let rules = true
-#let contact_bottom = false
 #let capital_titles = true
 #let x_inset = 2em
 #let y_inset = 0em
@@ -61,11 +60,9 @@
         Greater Seattle Area, WA
       ]\
     ]
-    #if not contact_bottom {
-      "anthony.j.green@outlook.com | (253) 495-2988 | "
-      link("https://www.linkedin.com/in/anthonygreen03", "linkedin.com/in/anthonygreen03")+" | "
-      link("https://www.github.com/gusjengis", "github.com/gusjengis")
-    }
+      anthony.j.green\@outlook.com | (253) 495-2988 | 
+      #link("https://www.linkedin.com/in/anthonygreen03", "linkedin.com/in/anthonygreen03") | 
+      #link("https://www.github.com/gusjengis", "github.com/gusjengis")
 ]
 
 = EXPERIENCE
@@ -87,32 +84,42 @@
   === Undergraduate Researcher #text(weight: "regular")[| Rust, WebGPU, Python]  #h(1fr) 09/2023 - 12/2024
   _University of Washington_ #h(1fr) Tacoma, WA 
   - Lead developer of a physics simulator for earthquake simulation.
-  - Built from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
+  - Built engine from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
   - Built extensive tooling for experiment setup, runtime control, measurement, visualization, and automated analysis.
-  // - Achieved substantial speedups vs. PFC on scoped cases, reducing compute time by an estimated 40–60%.
-  // - Collaborated with faculty to align technical design with research objectives and validation needs.
+  - Collaborated with faculty to align technical design with research and performance needs.
 
 ]
 = PROJECTS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://github.com/gusjengis/Particle-Physics-Sim", "github.com/gusjengis/Particle-Physics-Sim")
-  - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
-  - Achieved a 300% performance boost using spatially partitioned collision detection.
-  === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, NodeJS, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
-  - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
-  - Developed a custom Node.js server and templating engine, hosted on AWS. 
-  - Engineered a system maintaining window states in query strings for consistent UX. 
-  - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
+  === Physics Simulator #text(weight: "regular")[| Rust, WebGPU, Python] #h(1fr) #link("https://github.com/gusjengis/Particle-Physics-Sim", "github.com/gusjengis/Particle-Physics-Sim")
+  #if not rust { block(above: 0pt, below: 0pt)
+    [
+      #show heading.where(level: 3): set block(above: 0pt, below: 7pt)
+      === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
+      - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
+      - Achieved a 300% performance boost using spatially partitioned collision detection.
+      #show heading.where(level: 3): set block(above: 11pt, below: 7pt)
+      === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, NodeJS, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
+      - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
+      - Developed a custom Node.js server and templating engine, hosted on AWS. 
+      - Engineered a system maintaining window states in query strings for consistent UX. 
+      - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
+    ]
+  }
   === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
-  - #lorem(10)
-  - #lorem(10)
-  - #lorem(10)
-  - #lorem(10)
-  === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
-  - Designed and assembled a unique, Arduino-based handheld gaming console with custom 3D-printed components and off-the-shelf electronics. 
-  - Programmed a simple operating system for the device, complete with user interface, settings menu, and multiple applications, including four original games. 
-  - Accomplished this with extreme limitations, specifically a 16x8 RGBLED display, 16mhz processor, and 256kb RAM. 
+  - Used Rust to create a Linux service for hyprland that logs the focused window at all times. 
+  - Created a CLI that uses these logs to render an activity/screen time report.
+  - Wrote complex code to render a high-res timeline in the terminal.
+  #if not rust { block()
+    [
+      #show heading.where(level: 3): set block(above: 0pt, below: 7pt)
+      === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
+      - Designed and assembled a unique, Arduino-based handheld gaming console with custom 3D-printed components and off-the-shelf electronics. 
+      - Programmed a simple operating system for the device, complete with user interface, settings menu, and multiple applications, including four original games. 
+      - Accomplished this with extreme limitations, specifically a 16x8 RGBLED display, 16mhz processor, and 256kb RAM. 
+    ]
+  }
 ]
 = TECHNICAL SKILLS
 #rule()
@@ -128,14 +135,3 @@
   B.S. in Computer Science - University of Washington (2021 - 2023)\
   Associates of Science - Pierce College (Running Start) (2019 - 2021)
 ]
-
-#if contact_bottom{
-  rule()
-  block(inset: (x: x_inset, y: y_inset))[
-    align(center)[
-          anthony.j.green\@outlook.com | (253) 495-2988 |
-        #link("https://www.linkedin.com/in/anthonygreen03", "linkedin.com/in/anthonygreen03") |
-        #link("https://www.github.com/gusjengis", "github.com/gusjengis")
-    ]
-  ]
-}
