@@ -118,7 +118,7 @@
       - Achieved a 300% performance boost using spatially partitioned collision detection.
   ]
   #not_rust[
-      === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, NodeJS, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
+      === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, Node, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
       - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
       - Developed a custom Node.js server and templating engine, hosted on AWS. 
       - Engineered a system maintaining window states in query strings for consistent UX. 
@@ -128,7 +128,18 @@
     === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
     - Used Rust to create a Linux service for hyprland that logs the window focus events.
     - Created a CLI that uses these logs to render an activity/screen time report.
-    - Wrote complex code to render a high-res timeline in the terminal.
+    - Wrote complex code to render a high-res timeline and interactive terminal UI.
+  ]
+  #rust[
+    === scutl #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/scutl", "github.com/gusjengis/scutl")
+    - CLI tool that generates mermaid diagrams of projects
+    - Uses the Language Server Protocol to build accurate diagrams for any language.
+  ]
+  #rust[
+    === Timeline Prototype #text(weight: "regular")[| Rust, WebGL, WASM, JS, HTML/CSS] 
+    - Created a prototype website using Rust/WASM for the business logic.
+    - Used WebGL from Rust for high performance rendering of huge quantities of data.
+    - Used a traditional JS canvas layer for well-styled UI.
   ]
   #not_rust[
       === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
