@@ -102,7 +102,7 @@
   _Walgreens_ #h(1fr) Puyallup, WA 
 
   === Undergraduate Researcher #text(weight: "regular")[| Rust, WebGPU, Python]  #h(1fr) 09/2023 - 12/2024
-  _University of Washington_ #h(1fr) Tacoma, WA 
+  _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-Sim", "github.com/gusjengis/Physics-Sim")*
   - Lead developer of a physics simulator for earthquake simulation.
   - Built engine from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
   - Built extensive tooling for experiment setup, runtime control, measurement, visualization, and automated analysis.
@@ -112,7 +112,6 @@
 = PROJECTS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  === Physics Simulator #text(weight: "regular")[| Rust, WebGPU, Python] #h(1fr) #link("https://github.com/gusjengis/Particle-Physics-Sim", "github.com/gusjengis/Particle-Physics-Sim")
   #not_rust[
       === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
       - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
@@ -127,7 +126,7 @@
   ]
   #rust[
     === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
-    - Used Rust to create a Linux service for hyprland that logs the focused window at all times. 
+    - Used Rust to create a Linux service for hyprland that logs the window focus events.
     - Created a CLI that uses these logs to render an activity/screen time report.
     - Wrote complex code to render a high-res timeline in the terminal.
   ]

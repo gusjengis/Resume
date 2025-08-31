@@ -1,1 +1,1 @@
-![](./resume.png)
+![](./out/resume-rust.png)
