@@ -1,10 +1,10 @@
 physics-sim
 timeline
-hyprfocus
 scutl
+hyprfocus
+perlin-noise-generator
 game of life
 plinth
-mermaid-class-diagrams
 webgpu spiral
 script gen
 lsp-servers + cli

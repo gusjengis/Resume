@@ -44,7 +44,6 @@
 #show heading.where(level: 3): set text(fill: palette.heading, size: 9pt)
 
 #show heading.where(level: 1): set block(above: 14pt, below: 5pt)
-// #show heading.where(level: 2): set block(above: 11pt, below: 7pt)
 #show heading.where(level: 3): set block(above: 11pt, below: 7pt)
 
 #show link: set text(fill: palette.fg)
@@ -55,7 +54,6 @@
 #let not_rust(body, above: 11pt, below: 7pt, h3_above: 0pt, h3_below: 7pt) = {
   if not rust_focused {
     block(above: above, below: below)[
-      // local spacing for level-3 headings inside this block only
       #show heading.where(level: 3): set block(above: h3_above, below: h3_below)
     #body
     ]
@@ -65,7 +63,6 @@
 #let rust(body, above: 11pt, below: 7pt, h3_above: 0pt, h3_below: 7pt) = {
   if rust_focused {
     block(above: above, below: below)[
-      // local spacing for level-3 headings inside this block only
       #show heading.where(level: 3): set block(above: h3_above, below: h3_below)
     #body
     ]
@@ -75,7 +72,6 @@
 #align(center)[
     #text(18pt, weight: "bold", fill: palette.fg )[Anthony Green]\
 
-    // #text(12pt, weight: "bold", fill: palette.fg )[Software Engineer]\
     #block(above: 7pt, below: 10pt)[#text(11pt, weight: "bold", fill: palette.fg, )[
         Greater Seattle Area, WA
       ]\
@@ -136,10 +132,21 @@
     - Uses the Language Server Protocol to build accurate diagrams for any language.
   ]
   #rust[
-    === Timeline Prototype #text(weight: "regular")[| Rust, WebGL, WASM, JS, HTML/CSS] 
+    === Timeline Prototype #text(weight: "regular")[| Rust, WebGL, WASM, JS] 
     - Created a prototype website using Rust/WASM for the business logic.
     - Used WebGL from Rust for high performance rendering of huge quantities of data.
     - Used a traditional JS canvas layer for well-styled UI.
+  ]
+  #rust[
+    === Terrain Generator #text(weight: "regular")[| Rust, WebGPU, WASM, JS] #h(1fr)#link("https://portfolio.agreenweb.com/perlin", "portfolio.agreenweb.com/perlin")
+    - Implemented Perlin noise from scratch using WebGPU compute shaders.
+    - Stacked layers of this noise in rendering shaders to generate 3D terrain with lighting and camera controls.
+    - Used WASM and JS to imbed this Rust program in my portfolio site for easy sharing. 
+  ]
+  #rust[
+    === Plinth #text(weight: "regular")[| Rust, WebGPU, WASM, TS, SolidJS] #h(1fr)#link("https://portfolio.agreenweb.com/perlin", "portfolio.agreenweb.com/perlin")
+    - Setup a template repo that allows me to quickly get started with an advanced web stack.
+    - The stack consists of a Rust core via WASM, uses WebGPU for rendering, and has a Typescript + SolidJS layer for optional advanced UI.
   ]
   #not_rust[
       === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
