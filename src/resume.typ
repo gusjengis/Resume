@@ -117,7 +117,7 @@
       === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, Node, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
       - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
       - Developed a custom Node.js server and templating engine, hosted on AWS. 
-      - Engineered a system maintaining window states in query strings for consistent UX. 
+      - Engineered a system maintaining window states in query strings to facilitate sharing. 
       - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
   ]
   #rust[
