@@ -81,6 +81,11 @@
       #link("https://www.github.com/gusjengis", "github.com/gusjengis")
 ]
 
+// #lorem(20)
+#align(center)[
+  Systems engineer specializing in Rust, WebGPU, GPU compute, and WASM for portability and performance.
+]
+
 = EXPERIENCE
 #rule()
 
