@@ -1,4 +1,4 @@
-Rust-Focused Resume for RustConf!!!
+Rust-Focused Resume for RustConf
 
 ![](./out/resume-rust.png)
 
