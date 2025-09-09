@@ -4,7 +4,7 @@
 #let rust_focused = if "rust" in sys.inputs { sys.inputs.rust == "true" } else { false }
 #let rules = true
 #let capital_titles = true
-#let x_inset = 2em
+#let x_inset = 1.9em
 #let y_inset = 0em
 #let section_above = 10pt
 #let section_below = 10pt
@@ -127,7 +127,7 @@
   ]
   #rust[
     === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
-    - Used Rust to create a Linux service for hyprland that logs the window focus events.
+    - Used Rust to create a Linux service for hyprland that logs window focus events.
     - Created a CLI that uses these logs to render an activity/screen time report.
     - Wrote complex code to render a high-res timeline and interactive terminal UI.
   ]
@@ -151,7 +151,8 @@
   #rust[
     === Plinth #text(weight: "regular")[| Rust, WebGPU, WASM, TS, SolidJS] #h(1fr)#link("https://portfolio.agreenweb.com/perlin", "portfolio.agreenweb.com/perlin")
     - Setup a template repo that allows me to quickly get started with an advanced web stack.
-    - The stack consists of a Rust core via WASM, uses WebGPU for rendering, and has a Typescript + SolidJS layer for optional advanced UI.
+    - The stack consists of a Rust core via WASM, uses WebGPU for rendering and a Typescript + SolidJS layer for advanced UI.
+    - This is all set up with a custom dev server that enables hot reloading for rapid iteration.  
   ]
   #not_rust[
       === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
