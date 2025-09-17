@@ -3,6 +3,6 @@ Rust-Focused Resume for RustConf
 ![](./out/resume-rust.png)
 
 
-<!-- Normal Resume -->
+Normal Resume
 
-<!-- ![](./out/resume.png) -->
+![](./out/resume.png)
