@@ -113,6 +113,10 @@
 = PROJECTS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
+    === hyprlog #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
+    - Used Rust to create a Linux service for hyprland that logs window focus events. First activity tracker for the platform.
+    - Created a termianl UI that uses these logs to render an interactive activity/screen time report.
+    - Setup a CD/CI pipeline using Github Actions to automatically publish releases to several package managers.
   #not_rust[
       === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
       - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
@@ -124,12 +128,6 @@
       - Developed a custom Node.js server and templating engine, hosted on AWS. 
       - Engineered a system maintaining window states in query strings to facilitate sharing. 
       - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
-  ]
-  #rust[
-    === hyprfocus #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprfocus", "github.com/gusjengis/hyprfocus")
-    - Used Rust to create a Linux service for hyprland that logs window focus events.
-    - Created a CLI that uses these logs to render an activity/screen time report.
-    - Wrote complex code to render a high-res timeline and interactive terminal UI.
   ]
   #rust[
     === scutl #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/scutl", "github.com/gusjengis/scutl")
@@ -164,9 +162,9 @@
 = TECHNICAL SKILLS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  *Languages*: Rust, Python, JS, C64 Basic, C (K&R & ANSI), C++, Arduino, HTML, CSS, WASM, WGSL, GLSL, C\#, HLSL, Nix, Markdown, Typst
+  *Languages*: Rust, Python, JS, C64 Basic, C (K&R & ANSI), C++, Arduino, HTML, CSS, WASM, WGSL/WebGPU, GLSL/WebGL, C\#, HLSL, Nix, Markdown, Typst
 
-  *Tools*: Arduino, WASM, WebGPU, WebGL, Unity, Git, Docker, AWS, Neovim, Linux, Windows, MacOS
+  *Tools*: Neovim, OpenCode(AI Agent), Linux, Git, Unity, Docker, AWS, Windows, MacOS, Arduino 
 ]
 
 = EDUCATION
