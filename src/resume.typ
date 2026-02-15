@@ -1,6 +1,5 @@
 // VARIABLES
 
-#let professional = true
 #let rust_focused = if "rust" in sys.inputs { sys.inputs.rust == "true" } else { false }
 #let rules = true
 #let capital_titles = true
@@ -9,11 +8,7 @@
 #let section_above = 10pt
 #let section_below = 10pt
 
-#let dark = true
-
-#if professional {
-  dark = false
-}
+#let dark = false
 
 // STYLING
 
@@ -92,11 +87,10 @@
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
   === Backend Engineer #text(weight: "regular")[| C\#, Python, JS]  #h(1fr) 05/2025 - Present
   _Rainspire Studios_ #h(1fr) Seattle, WA 
-  - Led the integration of mobile titles with cloud services. 
-  - Handled user authentication, cloud storage, serverless code, and ad integration.
-  - Built gameplay features and tooling in Unity (C\#).
-  - Managed iOS builds in Xcode and managed Apple Developer account.
-  - Prototyped adaptive bots using Unity ML-Agents to automate balance testing as mechanics evolved.
+  - Led the integration of mobile titles with cloud services.
+  - Handled user authentication, cloud storage, serverless endpoints, and ad integration.
+  - Took ownership of ensuring pixel perfect UI and animations.
+  - Managed Apple Developer account and automated IOS builds.
   - Implemented in-engine data visualization to accelerate debugging and performance analysis.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
@@ -104,8 +98,8 @@
 
   === Undergraduate Researcher #text(weight: "regular")[| Rust, WebGPU, Python]  #h(1fr) 09/2023 - 12/2024
   _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-Sim", "github.com/gusjengis/Physics-Sim")*
-  - Lead developer of a physics simulator for earthquake simulation.
-  - Built engine from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
+  - Lead developer of an interactive physics simulator for earthquake simulation.
+  - Designed highly performant engine from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
   - Built extensive tooling for experiment setup, runtime control, measurement, visualization, and automated analysis.
   - Collaborated with faculty to align technical design with research and performance needs.
 
@@ -115,7 +109,7 @@
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
     === hyprlog #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
     - Used Rust to create a Linux service for hyprland that logs window focus events. First activity tracker for the platform.
-    - Created a termianl UI that uses these logs to render an interactive activity/screen time report.
+    - Created a terminl UI that uses these logs to render an interactive activity/screen time report.
     - Setup a CD/CI pipeline using Github Actions to automatically publish releases to several package managers.
   #not_rust[
       === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
@@ -162,9 +156,9 @@
 = TECHNICAL SKILLS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  *Languages*: Rust, Python, JS, C64 Basic, C (K&R & ANSI), C++, Arduino, HTML, CSS, WASM, WGSL/WebGPU, GLSL/WebGL, C\#, HLSL, Nix, Markdown, Typst
+  *Languages*: Rust, Python, JS, C64 Basic, C/C++, Arduino, HTML, CSS, WASM, WGSL/WebGPU, GLSL/WebGL, C\#, HLSL, Nix, Markdown, Typst
 
-  *Tools*: Neovim, OpenCode(AI Agent), Linux, Git, Unity, Docker, AWS, Windows, MacOS, Arduino 
+  *Tools*: Neovim, OpenCode(AI Agent), Git, Linux, Unity, Docker, AWS, Windows, MacOS, Arduino 
 ]
 
 = EDUCATION
