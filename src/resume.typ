@@ -87,8 +87,8 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
   === Backend Engineer #text(weight: "regular")[| C\#, JS, Unity]  #h(1fr) 05/2025 - Present
   _Rainspire Studios_ #h(1fr) Seattle, WA 
-  - Implemented cloud backed for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
-  - Managed Apple Developer account and automated iOS build and release process.
+  - Implemented cloud backend for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
+  - Managed Apple Developer account and automated iOS build and deployment process.
   - Integrated monetization and platform SDKs into production mobile builds.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
