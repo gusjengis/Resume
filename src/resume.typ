@@ -78,7 +78,7 @@
 
 // #lorem(20)
 #align(center)[
-  Systems engineer specializing in Rust, WebGPU, GPU compute, and WASM for portability and performance.
+Systems engineer specializing in Rust, focused on backend systems, GPU compute, modern web technology, and developer tooling.
 ]
 
 = EXPERIENCE
@@ -87,22 +87,22 @@
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
   === Backend Engineer #text(weight: "regular")[| C\#, Python, JS]  #h(1fr) 05/2025 - Present
   _Rainspire Studios_ #h(1fr) Seattle, WA 
-  - Led the integration of mobile titles with cloud services.
+  - Lead the integration of mobile titles with cloud services.
   - Handled user authentication, cloud storage, serverless endpoints, and ad integration.
   - Took ownership of ensuring pixel perfect UI and animations.
   - Managed Apple Developer account and automated IOS builds.
   - Implemented in-engine data visualization to accelerate debugging and performance analysis.
+  - General purpose C\# developer, touching all parts of the project.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
   _Walgreens_ #h(1fr) Puyallup, WA 
 
   === Undergraduate Researcher #text(weight: "regular")[| Rust, WebGPU, Python]  #h(1fr) 09/2023 - 12/2024
   _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-Sim", "github.com/gusjengis/Physics-Sim")*
-  - Lead developer of an interactive physics simulator for earthquake simulation.
-  - Designed highly performant engine from scratch using Rust and WebGPU; simulation and rendering all done on the GPU.
-  - Built extensive tooling for experiment setup, runtime control, measurement, visualization, and automated analysis.
+  - Lead developer of an interactive physics engine for earthquake simulation.
+  - Designed highly performant GPU compute and rendering pipelines, built from scratch using Rust and WebGPU
+  - Built extensive UI and tooling for experiment setup, runtime control, measurement, visualization, and automated analysis.
   - Collaborated with faculty to align technical design with research and performance needs.
-
 ]
 = PROJECTS
 #rule()
