@@ -85,14 +85,11 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 #rule()
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  === Backend Engineer #text(weight: "regular")[| C\#, Python, JS]  #h(1fr) 05/2025 - Present
+  === Backend Engineer #text(weight: "regular")[| C\#, JS, Unity]  #h(1fr) 05/2025 - Present
   _Rainspire Studios_ #h(1fr) Seattle, WA 
-  - Lead the integration of mobile titles with cloud services.
-  - Handled user authentication, cloud storage, serverless endpoints, and ad integration.
-  - Took ownership of ensuring pixel perfect UI and animations.
-  - Managed Apple Developer account and automated IOS builds.
-  - Implemented in-engine data visualization to accelerate debugging and performance analysis.
-  - General purpose C\# developer, touching all parts of the project.
+  - Implemented cloud backed for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
+  - Managed Apple Developer account and automated iOS build and release process.
+  - Integrated monetization and platform SDKs into production mobile builds.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
   _Walgreens_ #h(1fr) Puyallup, WA 
