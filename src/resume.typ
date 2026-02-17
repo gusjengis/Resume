@@ -90,6 +90,7 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
   - Implemented cloud backend for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
   - Managed Apple Developer account and automated iOS build and deployment process.
   - Integrated monetization and platform SDKs into production mobile builds.
+  - Designed the animation system and drove visual polish to deliver investor-ready builds.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
   _Walgreens_ #h(1fr) Puyallup, WA 
