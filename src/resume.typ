@@ -90,7 +90,7 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
   - Implemented cloud backend for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
   - Managed Apple Developer account and automated iOS build and deployment process.
   - Integrated monetization and platform SDKs into production mobile builds.
-  - Designed the animation system and drove visual polish to deliver investor-ready builds.
+  - Designed and implemented animation systems and drove visual polish to deliver investor-ready builds.
 
   === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
   _Walgreens_ #h(1fr) Puyallup, WA 
@@ -105,22 +105,18 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 = PROJECTS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-    === hyprlog #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
-    - Used Rust to create a Linux service for hyprland that logs window focus events. First activity tracker for the platform.
-    - Created a terminl UI that uses these logs to render an interactive activity/screen time report.
-    - Setup a CD/CI pipeline using Github Actions to automatically publish releases to several package managers.
-  #not_rust[
-      === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
-      - Implemented a beautiful particle-based artificial life simulator. Complex interactions from simple rules. 
-      - Achieved a 300% performance boost using spatially partitioned collision detection.
-  ]
-  #not_rust[
-      === Portfolio Site #text(weight: "regular")[| JS, HTML/CSS, Node, AWS]  #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
-      - Crafted a unique, OS-style portfolio site from scratch, showcasing over 20 personal projects, using pure JS/HTML/CSS. 
-      - Developed a custom Node.js server and templating engine, hosted on AWS. 
-      - Engineered a system maintaining window states in query strings to facilitate sharing. 
-      - Created a proprietary, component-based UI framework, facilitating efficient abstraction. 
-  ]
+
+  === hyprlog #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
+  - Built a Linux daemon for Hyprland that captures and structures window focus events into persistent activity logs.
+  - Developed an interactive TUI dashboard for visualizing usage patterns and time allocation.
+  - Implemented CI/CD pipelines to produce and publish multi-architecture releases via GitHub Actions.
+
+  === Autonomous Agent Provisioner #text(weight: "regular")[| Nix, Linux, JS, Bash] #h(1fr) #link("https://github.com/gusjengis/nix-openclaw-vm", "github.com/gusjengis/nix-openclaw-vm")
+  - Built a reproducible Nix-based VM stack to provision OpenClaw-ready instances with a single command.
+  - Automated VM provisioning and bootstrap workflows to facilitate automatic and consistent deployments.
+  - Packaged system dependencies and runtime configuration declaratively to reduce setup time and configuration drift.
+  - Built a web-based control plane to manage bot execution, edit configuration, view history, and perform remote rollbacks.
+
   #rust[
     === scutl #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/scutl", "github.com/gusjengis/scutl")
     - CLI tool that generates mermaid diagrams of projects
@@ -145,18 +141,28 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
     - This is all set up with a custom dev server that enables hot reloading for rapid iteration.  
   ]
   #not_rust[
+      === Particle Life #text(weight: "regular")[| JS, WebGL] #h(1fr) #link("https://portfolio.agreenweb.com/pLife", "portfolio.agreenweb.com/pLife")
+      - Built a WebGL-based particle simulation engine modeling emergent artificial life behavior.
+      - Improved performance by 3× using spatial partitioning and optimized collision detection.
+  ]
+  #not_rust[
       === Arduino Handheld #text(weight: "regular")[| C++, Arduino, Electronics, Embedded Systems] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
       - Designed and assembled a unique, Arduino-based handheld gaming console with custom 3D-printed components and off-the-shelf electronics. 
       - Programmed a simple operating system for the device, complete with user interface, settings menu, and multiple applications, including four original games. 
       - Accomplished this with extreme limitations, specifically a 16x8 RGBLED display, 16mhz processor, and 256kb RAM. 
   ]
+  #not_rust[
+      === Portfolio Site #text(weight: "regular")[| JS, Node, AWS] #h(1fr) #link("https://portfolio.agreenweb.com", "portfolio.agreenweb.com")
+      - Built a custom OS-style portfolio platform showcasing 20+ running projects.
+      - Developed a Node.js backend and client-side window state system, deployed on AWS.
+  ]
 ]
 = TECHNICAL SKILLS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  *Languages*: Rust, Python, JS, C64 Basic, C/C++, Arduino, HTML, CSS, WASM, WGSL/WebGPU, GLSL/WebGL, C\#, HLSL, Nix, Markdown, Typst
+  *Languages*: Rust, WASM, WGSL/WebGPU,Python, JS, GLSL/WebGL, C/C++, C\#, HLSL, Nix
 
-  *Tools*: Neovim, OpenCode(AI Agent), Git, Linux, Unity, Docker, AWS, Windows, MacOS, Arduino 
+  *Tools*: Linux, Terminal, Git/Github, AWS, Docker, Windows, MacOS  
 ]
 
 = EDUCATION
