@@ -85,7 +85,7 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 #rule()
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  === Backend Engineer #text(weight: "regular")[| C\#, JS, Unity]  #h(1fr) 05/2025 - Present
+  === Backend Engineer\*  #text(weight: "regular")[| C\#, JS, Unity]  #h(1fr) 05/2025 - Present
   _Rainspire Studios_ #h(1fr) Seattle, WA 
   - Implemented cloud backend for Unity mobile titles, including authentication, persistent storage, and serverless endpoints.
   - Managed Apple Developer account and automated iOS build and deployment process.
@@ -106,16 +106,16 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-  === hyprlog #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
+  === hyprlog\* #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/hyprlog", "github.com/gusjengis/hyprlog")
   - Built a Linux daemon for Hyprland that captures and structures window focus events into persistent activity logs.
   - Developed an interactive TUI dashboard for visualizing usage patterns and time allocation.
   - Implemented CI/CD pipelines to produce and publish multi-architecture releases via GitHub Actions.
 
-  === Autonomous Agent Provisioner #text(weight: "regular")[| Nix, Linux, JS, Bash] #h(1fr) #link("https://github.com/gusjengis/nix-openclaw-vm", "github.com/gusjengis/nix-openclaw-vm")
-  - Built a reproducible Nix-based VM stack to provision OpenClaw-ready instances with a single command.
-  - Automated VM provisioning and bootstrap workflows to facilitate automatic and consistent deployments.
-  - Packaged system dependencies and runtime configuration declaratively to reduce setup time and configuration drift.
-  - Built a web-based control plane to manage bot execution, edit configuration, view history, and perform remote rollbacks.
+  === OpenClaw VM Starter Kit\* #text(weight: "regular")[| Nix, Linux, JS, Bash] #h(1fr) #link("https://github.com/gusjengis/nix-openclaw-vm", "github.com/gusjengis/nix-openclaw-vm")
+  - Designed a reproducible Nix-based virtual machine template for autonomous agent deployment.
+  - Built automated provisioning scripts with optional interactive configuration.
+  - Architected permission boundaries to isolate system modules from agent-controlled user space.
+  - Integrated secure remote tooling (SSH, Waypipe, Tailscale) and custom WebUI control plane.
 
   #rust[
     === scutl #text(weight: "regular")[| Rust] #h(1fr) #link("https://github.com/gusjengis/scutl", "github.com/gusjengis/scutl")
@@ -160,7 +160,7 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
 = TECHNICAL SKILLS
 #rule()
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-  *Languages*: Rust, WASM, WGSL/WebGPU,Python, JS, GLSL/WebGL, C/C++, C\#, HLSL, Nix
+  *Languages*: Rust, JS, C\#, C/C++, Nix, Bash, Python, WASM  WGSL, GLSL, HLSL 
 
   *Tools*: Linux, Terminal, Git/Github, AWS, Docker, Windows, MacOS  
 ]
@@ -171,3 +171,4 @@ Systems engineer specializing in Rust, focused on backend systems, GPU compute, 
   B.S. in Computer Science - University of Washington (2021 - 2023)\
   Associates of Science - Pierce College (Running Start) (2019 - 2021)
 ]
+\* Ongoing projects
