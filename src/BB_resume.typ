@@ -105,12 +105,14 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 - Broad hands-on familiarity with gaming consoles, phones, tablets, TVs, monitors, smart home products, and major consumer platforms.
 - Strong knowledge of peripherals, display technology, and audio gear including keyboards, mice, controllers, docks, OLED and LCD behavior, HDR, headphones, DACs, and amplifiers.
+- Configured and maintained home technology setups involving LG OLED TVs, Philips Hue lighting, Home Assistant automation, and connected devices.
 
 
 === VR, Electronics, and Embedded Hardware
 
 - Long-term VR user with experience across headset generations, from early Oculus development kits to current consumer systems.
 - Built electronics projects with Arduino hardware, soldering, component-level troubleshooting, and basic electrical engineering fundamentals.
+- Comfortable learning new consumer hardware quickly and troubleshooting unfamiliar devices through hands-on testing.
 ]
 
 
@@ -119,7 +121,7 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-*Platforms & Tools*: Windows, macOS, Linux, iOS, Android, Arduino, soldering
+*Platforms & Tools*: Windows, macOS, Linux, iOS, Android, Arduino, Home Assistant, Soldering
 
 ]
 
