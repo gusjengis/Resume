@@ -54,7 +54,7 @@
 ]
 
 #align(center)[
-Hands-on consumer technology specialist with broad experience repairing PCs and laptops, building custom systems, and configuring devices across Windows, macOS, Linux, iOS, and Android. Strong at diagnosing hardware and software issues, explaining technical tradeoffs clearly, and helping people get the right setup for computers, gaming, home theater, audio, VR, and smart home technology.
+Consumer technology generalist focused on PC repair and configuration, cross-platform troubleshooting, and customer support.
 ]
 
 
