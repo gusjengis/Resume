@@ -96,37 +96,21 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 === PC Hardware & Device Repair
 
-- Lifelong PC user with extensive experience assembling and upgrading custom desktop systems.
-- Diagnosed and repaired PC hardware issues including motherboard failures, thermal problems, and OS corruption.
-- Installed and configured Windows, macOS, and Linux environments across multiple machines.
-- Comfortable troubleshooting BIOS and firmware settings, boot failures, drivers, and system performance issues.
+- Extensive hands-on experience assembling, upgrading, and repairing PCs and laptops.
+- Troubleshoot hardware failures, thermal issues, OS corruption, BIOS and firmware settings, boot problems, drivers, and system performance.
+- Install and configure Windows, macOS, and Linux across varied hardware.
 
 
-=== Consumer Electronics Ecosystems
+=== Consumer Electronics & Peripherals
 
-- Extensive hands-on experience with gaming consoles, VR systems, phones, tablets, TVs, monitors, and smart home technology.
-- Configured and maintained complex smart home setups including LG OLED displays, Philips Hue lighting, Home Assistant automation, and networked devices.
-- Experienced with major consumer platforms including Windows, macOS, Linux, iOS, and Android.
-
-
-=== Peripherals, Displays, and Audio Equipment
-
-- Deep familiarity with keyboards, mice, controllers, docks, adapters, and other computer peripherals.
-- Knowledgeable about display technologies including OLED and LCD behavior, refresh rates, panel types, HDR, and monitor configuration.
-- Experienced with high-end audio equipment including headphones, DACs, amplifiers, speakers, and record player modification.
+- Broad hands-on familiarity with gaming consoles, phones, tablets, TVs, monitors, smart home products, and major consumer platforms.
+- Strong knowledge of peripherals, display technology, and audio gear including keyboards, mice, controllers, docks, OLED and LCD behavior, HDR, headphones, DACs, and amplifiers.
 
 
-=== Virtual Reality & Emerging Hardware
+=== VR, Electronics, and Embedded Hardware
 
-- Long-term VR user with experience across multiple generations of headsets, from early Oculus development kits to current consumer systems.
-- Familiar with setup, troubleshooting, and performance optimization of VR hardware and software environments.
-
-
-=== Electronics & Embedded Hardware
-
-- Designed and assembled a custom handheld gaming device using Arduino hardware and discrete electronics.
-- Built and modified electronics projects involving soldering, component-level work, and hands-on troubleshooting.
-- Completed coursework in electrical engineering fundamentals covering basic circuit design and electronic components.
+- Long-term VR user with experience across headset generations, from early Oculus development kits to current consumer systems.
+- Built electronics projects with Arduino hardware, soldering, component-level troubleshooting, and basic electrical engineering fundamentals.
 ]
 
 
@@ -135,11 +119,7 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-*Diagnostics & Repair*: PC assembly, laptop repair, hardware troubleshooting, BIOS and firmware configuration, OS installation, driver issues
-
-*Consumer Technology*: Gaming consoles, VR headsets, TVs and monitors, smart home devices, mobile devices, peripherals, audio equipment
-
-*Platforms & Tools*: Windows, Linux, macOS, iOS, Android, Arduino, embedded systems, soldering
+*Platforms & Tools*: Windows, macOS, Linux, iOS, Android, Arduino, soldering
 
 ]
 
