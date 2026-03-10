@@ -54,7 +54,7 @@
 ]
 
 #align(center)[
-Technical specialist with experience diagnosing and repairing computer systems across Windows, macOS, and Linux environments. Skilled in troubleshooting hardware and software issues, configuring operating systems, and building reliable computing systems. Background in software engineering and electronics with strong problem-solving ability and clear technical communication.
+Hands-on consumer technology specialist with broad experience repairing PCs and laptops, building custom systems, and configuring devices across Windows, macOS, Linux, iOS, and Android. Strong at diagnosing hardware and software issues, explaining technical tradeoffs clearly, and helping people get the right setup for computers, gaming, home theater, audio, VR, and smart home technology.
 ]
 
 
@@ -63,11 +63,11 @@ Technical specialist with experience diagnosing and repairing computer systems a
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-=== Backend Engineer #text(weight: "regular")[| Unity, C\#, JS] #h(1fr) 05/2025 - Present
+=== Backend Engineer (Unpaid) #text(weight: "regular")[| Unity, C\#, JS] #h(1fr) 05/2025 - Present
 _Rainspire Studios_ #h(1fr) Seattle, WA 
 
 - Built and maintained backend systems supporting production mobile applications.
-- Diagnosed deployment issues across iOS, Android, and cloud environments.
+- Diagnosed cross-platform issues across iOS, Android, and cloud environments.
 - Managed Apple Developer infrastructure and automated build pipelines.
 - Integrated third-party SDKs and resolved platform compatibility issues.
 
@@ -75,9 +75,9 @@ _Rainspire Studios_ #h(1fr) Seattle, WA
 === Pharmacy Technician #h(1fr) 08/2024 - 04/2025
 _Walgreens_ #h(1fr) Puyallup, WA 
 
-- Assisted customers in a fast-paced retail environment and resolved technical issues with prescription systems.
+- Assisted customers in a fast-paced retail environment while balancing accuracy, speed, and service.
 - Maintained accuracy while handling sensitive information and time-critical requests.
-- Communicated clearly with customers to troubleshoot problems and provide solutions.
+- Communicated clearly with customers and coworkers to troubleshoot problems and resolve issues quickly.
 
 
 === Undergraduate Researcher #text(weight: "regular")[| Rust, GPU Compute] #h(1fr) 09/2023 - 12/2024
@@ -94,52 +94,39 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-=== PC Hardware & System Repair
+=== PC Hardware & Device Repair
 
 - Lifelong PC user with extensive experience assembling and upgrading custom desktop systems.
-- Diagnosed and repaired laptop and desktop hardware issues including storage failures, thermal problems, and OS corruption.
-- Installed and configured Windows and Linux environments across multiple machines.
-- Comfortable troubleshooting BIOS/firmware configuration, boot failures, and driver issues.
+- Diagnosed and repaired PC hardware issues including motherboard failures, thermal problems, and OS corruption.
+- Installed and configured Windows, macOS, and Linux environments across multiple machines.
+- Comfortable troubleshooting BIOS and firmware settings, boot failures, drivers, and system performance issues.
 
 
 === Consumer Electronics Ecosystems
 
-- Extensive hands-on experience with modern consumer electronics including gaming consoles, VR systems, mobile devices, displays, and smart home technology.
-- Configured and maintained complex home technology setups including LG OLED displays, Philips Hue lighting, Home Assistant automation, and networked devices.
+- Extensive hands-on experience with gaming consoles, VR systems, phones, tablets, TVs, monitors, and smart home technology.
+- Configured and maintained complex smart home setups including LG OLED displays, Philips Hue lighting, Home Assistant automation, and networked devices.
 - Experienced with major consumer platforms including Windows, macOS, Linux, iOS, and Android.
 
 
 === Peripherals, Displays, and Audio Equipment
 
-- Deep familiarity with computer peripherals including mechanical keyboards, gaming mice, controllers, and input devices.
-- Knowledgeable about display technologies including refresh rates, panel types, HDR, and monitor configuration.
-- Experienced with high-end audio equipment including headphones, DACs, amplifiers, and record player modification.
+- Deep familiarity with keyboards, mice, controllers, docks, adapters, and other computer peripherals.
+- Knowledgeable about display technologies including OLED and LCD behavior, refresh rates, panel types, HDR, and monitor configuration.
+- Experienced with high-end audio equipment including headphones, DACs, amplifiers, speakers, and record player modification.
 
 
 === Virtual Reality & Emerging Hardware
 
-- Long-term VR user with experience across multiple generations of headsets including Oculus development kits and modern consumer systems.
+- Long-term VR user with experience across multiple generations of headsets, from early Oculus development kits to current consumer systems.
 - Familiar with setup, troubleshooting, and performance optimization of VR hardware and software environments.
 
 
 === Electronics & Embedded Hardware
 
 - Designed and assembled a custom handheld gaming device using Arduino hardware and discrete electronics.
-- Performed soldering and component-level work during hardware development.
+- Built and modified electronics projects involving soldering, component-level work, and hands-on troubleshooting.
 - Completed coursework in electrical engineering fundamentals covering basic circuit design and electronic components.
-
-]
-= PROJECTS
-#rule()
-
-#block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
-
-=== Arduino Handheld Device #text(weight: "regular")[| Embedded Systems, Electronics] #h(1fr) #link("https://portfolio.agreenweb.com/handheld", "portfolio.agreenweb.com/handheld")
-
-- Designed and assembled a custom handheld computing device using Arduino hardware.
-- Implemented firmware and system software under strict hardware constraints.
-- Diagnosed and debugged hardware and firmware issues during development.
-
 ]
 
 
@@ -148,9 +135,11 @@ _University of Washington_ #h(1fr) *#link("https://github.com/gusjengis/Physics-
 
 #block(inset: (x: x_inset, y: y_inset), above: section_above, below: section_below)[
 
-*Operating Systems*: Linux, Windows, macOS  
+*Diagnostics & Repair*: PC assembly, laptop repair, hardware troubleshooting, BIOS and firmware configuration, OS installation, driver issues
 
-*Hardware & Systems*: PC assembly, system troubleshooting, BIOS configuration, OS installation, embedded systems
+*Consumer Technology*: Gaming consoles, VR headsets, TVs and monitors, smart home devices, mobile devices, peripherals, audio equipment
+
+*Platforms & Tools*: Windows, Linux, macOS, iOS, Android, Arduino, embedded systems, soldering
 
 ]
 
